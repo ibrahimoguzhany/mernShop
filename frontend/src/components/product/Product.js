@@ -1,7 +1,7 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import Rating from "../symbols/Rating";
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Rating from '../utils/Rating';
 
 const Product = ({ product }) => {
   return (

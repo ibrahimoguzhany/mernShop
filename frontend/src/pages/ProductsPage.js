@@ -10,7 +10,7 @@ import {
   Button,
   Form,
 } from 'react-bootstrap';
-import Rating from '../components/symbols/Rating';
+import Rating from '../components/utils/Rating';
 import { listProductDetails } from '../actions/productActions';
 import Loader from '../components/utils/Loader';
 import Message from '../components/utils/Message';
