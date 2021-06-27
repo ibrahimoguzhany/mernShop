@@ -25,9 +25,6 @@ app.use('/api/users', userRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
-// app.use(bodyParser.urlencoded({
-//   extended: true
-// }));
 
 const PORT = process.env.PORT || 5000;
 
