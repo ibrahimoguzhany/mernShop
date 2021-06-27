@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/utils/Message';
 import CheckoutSteps from '../components/CheckoutSteps';
+import { createOrder } from '../actions/orderActions';
 
 const PlaceOrderPage = () => {
   const cart = useSelector((state) => state.cart);
+
   const addDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2);
   };
