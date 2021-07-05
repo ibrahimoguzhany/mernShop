@@ -20,7 +20,6 @@ const PaymentPage = ({ location, history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log('submit');
     dispatch(savePaymentMethod(paymentMethod));
     history.push('/placeorder');
   };

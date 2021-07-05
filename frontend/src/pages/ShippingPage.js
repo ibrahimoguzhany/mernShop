@@ -18,7 +18,6 @@ const ShippingPage = ({ location, history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log('submit');
     dispatch(saveShippingAddress({ address, city, postalCode, country }));
     history.push('/payment');
   };

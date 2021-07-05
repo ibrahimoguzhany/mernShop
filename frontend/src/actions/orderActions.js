@@ -22,19 +22,20 @@ export const createOrder = (order) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.put(`/api/users/orders`, order, config);
+    const { data } = await axios.post(`/api/orders`, order, config);
+    console.log(data);
 
     dispatch({
       type: ORDER_CREATE_SUCCESS,
       payload: data,
     });
 
-    dispatch({
-      type: ORDER_CREATE_SUCCESS,
-      payload: data,
-    });
+    // dispatch({
+    //   type: ORDER_CREATE_SUCCESS,
+    //   payload: data,
+    // });
 
-    localStorage.setItem('userInfo', JSON.stringify(data));
+    localStorage.setItem('orderInfo', JSON.stringify(data));
   } catch (error) {
     dispatch({
       type: ORDER_CREATE_FAIL,
